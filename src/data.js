@@ -10,7 +10,7 @@ export const COMPANY = {
   director: 'H. Turki',
 }
 
-const img = (p) => `/images/${p}`
+const img = (p) => `${import.meta.env.BASE_URL}images/${p}`
 const range = (folder, n, ext = 'jpeg') => Array.from({ length: n }, (_, i) => img(`${folder}/${i + 1}.${ext}`))
 
 export const HERO_IMAGE = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=80'
